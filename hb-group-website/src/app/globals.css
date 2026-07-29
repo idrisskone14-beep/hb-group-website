@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #23262b;
+
+  /* Brand red — primary (from logo) */
+  --color-brand-50: #fdeceb;
+  --color-brand-100: #fbd4d3;
+  --color-brand-200: #f5aaa9;
+  --color-brand-300: #ef7d7c;
+  --color-brand-400: #f34d4b;
+  --color-brand-500: #f5171f;
+  --color-brand-600: #e01019;
+  --color-brand-700: #b60d15;
+  --color-brand-800: #8a0a10;
+  --color-brand-900: #5c070b;
+
+  /* Cyan — secondary (from logo) */
+  --color-accent-50: #e8f8fb;
+  --color-accent-100: #c8eef5;
+  --color-accent-200: #92dcea;
+  --color-accent-300: #5cc8dd;
+  --color-accent-400: #2fb5cd;
+  --color-accent-500: #16a9ca;
+  --color-accent-600: #0f8ba8;
+  --color-accent-700: #0c6f86;
+  --color-accent-800: #0a5865;
+  --color-accent-900: #073f48;
+
+  /* Anthracite gray — text */
+  --color-ink-50: #f5f6f7;
+  --color-ink-100: #e7e9eb;
+  --color-ink-200: #cbd0d4;
+  --color-ink-300: #a7aeb5;
+  --color-ink-400: #7c848d;
+  --color-ink-500: #565f69;
+  --color-ink-600: #3e454e;
+  --color-ink-700: #2d3138;
+  --color-ink-800: #1f2227;
+  --color-ink-900: #14161a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+
+  --color-accent-50: var(--color-accent-50);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-200: var(--color-accent-200);
+  --color-accent-300: var(--color-accent-300);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-700: var(--color-accent-700);
+  --color-accent-800: var(--color-accent-800);
+  --color-accent-900: var(--color-accent-900);
+
+  --color-ink-50: var(--color-ink-50);
+  --color-ink-100: var(--color-ink-100);
+  --color-ink-200: var(--color-ink-200);
+  --color-ink-300: var(--color-ink-300);
+  --color-ink-400: var(--color-ink-400);
+  --color-ink-500: var(--color-ink-500);
+  --color-ink-600: var(--color-ink-600);
+  --color-ink-700: var(--color-ink-700);
+  --color-ink-800: var(--color-ink-800);
+  --color-ink-900: var(--color-ink-900);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-manrope);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  --shadow-soft: 0 1px 2px rgba(20, 22, 26, 0.04), 0 8px 24px -12px rgba(20, 22, 26, 0.10);
+  --shadow-soft-lg: 0 4px 8px rgba(20, 22, 26, 0.04), 0 24px 48px -16px rgba(20, 22, 26, 0.16);
+  --shadow-glow-brand: 0 12px 32px -8px rgba(245, 23, 31, 0.35);
+  --shadow-glow-accent: 0 12px 32px -8px rgba(22, 169, 202, 0.35);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--color-brand-500);
+  color: white;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+}
+
+.container-xl {
+  width: 100%;
+  max-width: 88rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-xl {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-xl {
+    padding-inline: 3rem;
+  }
+}
+
+.text-gradient-brand {
+  background: linear-gradient(90deg, var(--color-brand-500), var(--color-accent-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-accent-500);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}

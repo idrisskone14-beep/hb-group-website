@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hb-group-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "hb-group-website", "run", "dev"],
+      "port": 3000
+    }
+  ]
+}
