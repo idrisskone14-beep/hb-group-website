@@ -88,18 +88,19 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-ink-900 py-24 sm:py-28">
-        <div className="container-xl grid grid-cols-1 items-center gap-16 lg:grid-cols-[0.8fr_1.2fr]">
-          <Reveal className="text-center lg:text-left">
-            <div className="mx-auto h-32 w-32 overflow-hidden rounded-full ring-4 ring-brand-600/40 lg:mx-0">
+        <div className="container-xl grid grid-cols-1 items-center gap-16 lg:grid-cols-[1fr_1.1fr]">
+          <Reveal className="mx-auto w-full max-w-md text-center lg:mx-0 lg:text-left">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[var(--shadow-soft-lg)]">
               <Image
                 src={CEO_MESSAGE.photo}
                 alt={CEO_MESSAGE.name}
-                width={256}
-                height={256}
-                className="h-full w-full object-cover"
+                fill
+                sizes="(min-width: 1024px) 480px, 90vw"
+                className="object-cover"
+                priority
               />
             </div>
-            <p className="mt-5 font-display text-lg font-bold text-white">{CEO_MESSAGE.name}</p>
+            <p className="mt-6 font-display text-xl font-bold text-white">{CEO_MESSAGE.name}</p>
             <p className="text-sm text-white/60">{CEO_MESSAGE.role}</p>
           </Reveal>
           <Reveal delay={0.1}>
