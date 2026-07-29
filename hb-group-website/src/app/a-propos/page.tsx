@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Eye, Target, CheckCircle2, Quote } from "lucide-react";
 import { PageHero } from "@/components/layout/page-hero";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -89,8 +90,14 @@ export default function AboutPage() {
       <section className="bg-ink-900 py-24 sm:py-28">
         <div className="container-xl grid grid-cols-1 items-center gap-16 lg:grid-cols-[0.8fr_1.2fr]">
           <Reveal className="text-center lg:text-left">
-            <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-accent-500 text-3xl font-bold text-white lg:mx-0">
-              DG
+            <div className="mx-auto h-32 w-32 overflow-hidden rounded-full ring-4 ring-brand-600/40 lg:mx-0">
+              <Image
+                src={CEO_MESSAGE.photo}
+                alt={CEO_MESSAGE.name}
+                width={256}
+                height={256}
+                className="h-full w-full object-cover"
+              />
             </div>
             <p className="mt-5 font-display text-lg font-bold text-white">{CEO_MESSAGE.name}</p>
             <p className="text-sm text-white/60">{CEO_MESSAGE.role}</p>

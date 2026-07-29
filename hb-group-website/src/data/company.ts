@@ -41,7 +41,8 @@ export const VALUES = [
 ];
 
 export const CEO_MESSAGE = {
-  name: "La Direction Générale",
+  name: "Hamid KONE",
+  photo: "/hamid-kone-dg.jpeg",
   role: "Directeur Général, HB GROUP SARL",
   message: [
     "Depuis la création de HB GROUP SARL, nous avons fait le choix d'une croissance fondée sur la confiance et la qualité de service plutôt que sur la précipitation.",
