@@ -12,6 +12,102 @@ export type Sector = {
 
 export const SECTORS: Sector[] = [
   {
+    slug: "forage",
+    name: "Forage",
+    icon: "Drill",
+    shortDescription:
+      "Forage de puits et solutions d'accès à l'eau pour particuliers, entreprises et collectivités.",
+    heroDescription:
+      "HB GROUP SARL réalise des travaux de forage pour garantir un accès fiable à l'eau, où que se trouve votre projet.",
+    intro: [
+      "Nous réalisons des études, forages et équipements de puits pour répondre aux besoins en eau des particuliers, entreprises agricoles, industries et collectivités.",
+      "Chaque projet de forage est précédé d'une étude technique rigoureuse afin de garantir la fiabilité et la durabilité de l'ouvrage.",
+    ],
+    prestations: [
+      "Étude de faisabilité et prospection hydrogéologique",
+      "Forage de puits pour particuliers et entreprises",
+      "Équipement de pompage et château d'eau",
+      "Forage pour projets agricoles et industriels",
+      "Maintenance et réhabilitation de forages existants",
+      "Accompagnement administratif des projets de forage",
+    ],
+    whyUs: [
+      "Études techniques rigoureuses avant travaux",
+      "Matériel de forage adapté à chaque terrain",
+      "Respect des normes de qualité de l'eau",
+      "Accompagnement jusqu'à la mise en service",
+    ],
+    gallery: [
+      { caption: "Chantier de forage en cours" },
+      { caption: "Équipement de pompage installé" },
+      { caption: "Étude hydrogéologique sur site" },
+    ],
+  },
+  {
+    slug: "mines",
+    name: "Mines",
+    icon: "Mountain",
+    shortDescription:
+      "Accompagnement de projets miniers et intermédiation dans le secteur des ressources naturelles.",
+    heroDescription:
+      "HB GROUP SARL accompagne les acteurs du secteur minier avec rigueur, conformité et professionnalisme.",
+    intro: [
+      "Notre pôle mines accompagne les investisseurs et opérateurs dans la structuration et le suivi de projets liés aux ressources minières en Côte d'Ivoire.",
+      "Nous veillons au respect des cadres réglementaires en vigueur et à la sécurisation des opérations sur le terrain.",
+    ],
+    prestations: [
+      "Accompagnement de projets miniers",
+      "Intermédiation entre opérateurs et partenaires",
+      "Conseil en conformité réglementaire du secteur minier",
+      "Coordination logistique de sites miniers",
+      "Mise en relation avec des experts techniques",
+      "Suivi administratif de dossiers miniers",
+    ],
+    whyUs: [
+      "Connaissance approfondie du secteur minier local",
+      "Réseau de partenaires et experts qualifiés",
+      "Respect strict des cadres réglementaires",
+      "Accompagnement discret et professionnel",
+    ],
+    gallery: [
+      { caption: "Coordination de projet minier" },
+      { caption: "Suivi de site d'exploitation" },
+      { caption: "Réunion technique sectorielle" },
+    ],
+  },
+  {
+    slug: "vente-de-vehicules",
+    name: "Vente de véhicules",
+    icon: "Car",
+    shortDescription:
+      "Vente de véhicules neufs et d'occasion pour particuliers, entreprises et administrations.",
+    heroDescription:
+      "HB GROUP SARL propose une gamme de véhicules fiables adaptés aux besoins professionnels et personnels de ses clients.",
+    intro: [
+      "Nous accompagnons nos clients dans l'acquisition de véhicules adaptés à leurs usages : véhicules de service, utilitaires, véhicules de tourisme ou flottes d'entreprise.",
+      "Notre équipe conseille chaque client sur le choix du véhicule le plus adapté à son budget et à ses besoins opérationnels.",
+    ],
+    prestations: [
+      "Vente de véhicules neufs et d'occasion",
+      "Constitution de flottes pour entreprises et administrations",
+      "Conseil en acquisition de véhicules professionnels",
+      "Accompagnement dans les démarches administratives",
+      "Mise en relation avec des partenaires de financement",
+      "Service après-vente et suivi client",
+    ],
+    whyUs: [
+      "Sélection rigoureuse de véhicules fiables",
+      "Accompagnement personnalisé selon l'usage",
+      "Transparence sur l'état et l'historique des véhicules",
+      "Suivi après-vente de qualité",
+    ],
+    gallery: [
+      { caption: "Gamme de véhicules disponibles" },
+      { caption: "Remise de véhicule à un client entreprise" },
+      { caption: "Contrôle qualité avant livraison" },
+    ],
+  },
+  {
     slug: "import-export",
     name: "Import-Export",
     icon: "Ship",
@@ -236,70 +332,6 @@ export const SECTORS: Sector[] = [
     ],
   },
   {
-    slug: "forage",
-    name: "Forage",
-    icon: "Drill",
-    shortDescription:
-      "Forage de puits et solutions d'accès à l'eau pour particuliers, entreprises et collectivités.",
-    heroDescription:
-      "HB GROUP SARL réalise des travaux de forage pour garantir un accès fiable à l'eau, où que se trouve votre projet.",
-    intro: [
-      "Nous réalisons des études, forages et équipements de puits pour répondre aux besoins en eau des particuliers, entreprises agricoles, industries et collectivités.",
-      "Chaque projet de forage est précédé d'une étude technique rigoureuse afin de garantir la fiabilité et la durabilité de l'ouvrage.",
-    ],
-    prestations: [
-      "Étude de faisabilité et prospection hydrogéologique",
-      "Forage de puits pour particuliers et entreprises",
-      "Équipement de pompage et château d'eau",
-      "Forage pour projets agricoles et industriels",
-      "Maintenance et réhabilitation de forages existants",
-      "Accompagnement administratif des projets de forage",
-    ],
-    whyUs: [
-      "Études techniques rigoureuses avant travaux",
-      "Matériel de forage adapté à chaque terrain",
-      "Respect des normes de qualité de l'eau",
-      "Accompagnement jusqu'à la mise en service",
-    ],
-    gallery: [
-      { caption: "Chantier de forage en cours" },
-      { caption: "Équipement de pompage installé" },
-      { caption: "Étude hydrogéologique sur site" },
-    ],
-  },
-  {
-    slug: "mines",
-    name: "Mines",
-    icon: "Mountain",
-    shortDescription:
-      "Accompagnement de projets miniers et intermédiation dans le secteur des ressources naturelles.",
-    heroDescription:
-      "HB GROUP SARL accompagne les acteurs du secteur minier avec rigueur, conformité et professionnalisme.",
-    intro: [
-      "Notre pôle mines accompagne les investisseurs et opérateurs dans la structuration et le suivi de projets liés aux ressources minières en Côte d'Ivoire.",
-      "Nous veillons au respect des cadres réglementaires en vigueur et à la sécurisation des opérations sur le terrain.",
-    ],
-    prestations: [
-      "Accompagnement de projets miniers",
-      "Intermédiation entre opérateurs et partenaires",
-      "Conseil en conformité réglementaire du secteur minier",
-      "Coordination logistique de sites miniers",
-      "Mise en relation avec des experts techniques",
-      "Suivi administratif de dossiers miniers",
-    ],
-    whyUs: [
-      "Connaissance approfondie du secteur minier local",
-      "Réseau de partenaires et experts qualifiés",
-      "Respect strict des cadres réglementaires",
-      "Accompagnement discret et professionnel",
-    ],
-    gallery: [
-      { caption: "Coordination de projet minier" },
-      { caption: "Suivi de site d'exploitation" },
-      { caption: "Réunion technique sectorielle" },
-    ],
-  },
-  {
     slug: "intermediation",
     name: "Intermédiation",
     icon: "Handshake",
@@ -361,38 +393,6 @@ export const SECTORS: Sector[] = [
       { caption: "Exploitation d'élevage HB Group" },
       { caption: "Suivi sanitaire du cheptel" },
       { caption: "Production d'élevage durable" },
-    ],
-  },
-  {
-    slug: "vente-de-vehicules",
-    name: "Vente de véhicules",
-    icon: "Car",
-    shortDescription:
-      "Vente de véhicules neufs et d'occasion pour particuliers, entreprises et administrations.",
-    heroDescription:
-      "HB GROUP SARL propose une gamme de véhicules fiables adaptés aux besoins professionnels et personnels de ses clients.",
-    intro: [
-      "Nous accompagnons nos clients dans l'acquisition de véhicules adaptés à leurs usages : véhicules de service, utilitaires, véhicules de tourisme ou flottes d'entreprise.",
-      "Notre équipe conseille chaque client sur le choix du véhicule le plus adapté à son budget et à ses besoins opérationnels.",
-    ],
-    prestations: [
-      "Vente de véhicules neufs et d'occasion",
-      "Constitution de flottes pour entreprises et administrations",
-      "Conseil en acquisition de véhicules professionnels",
-      "Accompagnement dans les démarches administratives",
-      "Mise en relation avec des partenaires de financement",
-      "Service après-vente et suivi client",
-    ],
-    whyUs: [
-      "Sélection rigoureuse de véhicules fiables",
-      "Accompagnement personnalisé selon l'usage",
-      "Transparence sur l'état et l'historique des véhicules",
-      "Suivi après-vente de qualité",
-    ],
-    gallery: [
-      { caption: "Gamme de véhicules disponibles" },
-      { caption: "Remise de véhicule à un client entreprise" },
-      { caption: "Contrôle qualité avant livraison" },
     ],
   },
   {
