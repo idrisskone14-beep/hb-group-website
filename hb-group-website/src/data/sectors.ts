@@ -12,6 +12,38 @@ export type Sector = {
 
 export const SECTORS: Sector[] = [
   {
+    slug: "construction-btp",
+    name: "Construction / BTP",
+    icon: "HardHat",
+    shortDescription:
+      "Travaux de construction et de bâtiment pour particuliers, entreprises et administrations.",
+    heroDescription:
+      "HB GROUP SARL réalise et accompagne des projets de construction et de BTP avec rigueur technique et respect des délais.",
+    intro: [
+      "Notre pôle Construction / BTP intervient sur des projets de bâtiment et de travaux publics pour le compte de particuliers, d'entreprises et d'administrations.",
+      "De la coordination de chantier au suivi technique, nous mobilisons des équipes et partenaires qualifiés pour livrer des ouvrages conformes aux normes et aux délais convenus.",
+    ],
+    prestations: [
+      "Construction de bâtiments résidentiels et professionnels",
+      "Travaux publics et aménagement de voiries",
+      "Coordination et suivi de chantier",
+      "Rénovation et réhabilitation de bâtiments",
+      "Sélection et supervision d'entreprises sous-traitantes",
+      "Accompagnement administratif et technique des projets BTP",
+    ],
+    whyUs: [
+      "Suivi rigoureux de chantier à chaque étape",
+      "Réseau d'entreprises et d'artisans qualifiés",
+      "Respect des normes de construction en vigueur",
+      "Maîtrise des délais et des coûts de réalisation",
+    ],
+    gallery: [
+      { caption: "Chantier de construction en cours" },
+      { caption: "Suivi technique de travaux BTP" },
+      { caption: "Livraison d'un ouvrage achevé" },
+    ],
+  },
+  {
     slug: "forage",
     name: "Forage",
     icon: "Drill",

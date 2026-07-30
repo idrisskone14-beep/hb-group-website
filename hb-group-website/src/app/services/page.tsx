@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Nos Services",
   description:
-    "Découvrez les 14 domaines d'expertise de HB GROUP SARL : import-export, transport, logistique, forage, mines, imprimerie, mobilier et bien plus.",
+    "Découvrez les 15 domaines d'expertise de HB GROUP SARL : construction/BTP, forage, mines, import-export, transport, logistique, imprimerie, mobilier et bien plus.",
 };
 
 export default function ServicesPage() {
@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Nos services"
         title="Une expertise multisectorielle au service de vos projets"
-        subtitle="HB GROUP SARL intervient sur 14 domaines d'activité complémentaires, avec la même exigence de qualité et de professionnalisme."
+        subtitle="HB GROUP SARL intervient sur 15 domaines d'activité complémentaires, avec la même exigence de qualité et de professionnalisme."
         breadcrumb={[{ label: "Nos Services" }]}
       />
 

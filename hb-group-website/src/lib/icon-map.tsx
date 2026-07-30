@@ -23,6 +23,7 @@ import {
   Building2,
   Newspaper,
   GraduationCap,
+  HardHat,
   type LucideIcon,
 } from "lucide-react";
 
@@ -51,6 +52,7 @@ export const ICONS: Record<string, LucideIcon> = {
   Building2,
   Newspaper,
   GraduationCap,
+  HardHat,
 };
 
 export function getIcon(name: string): LucideIcon {

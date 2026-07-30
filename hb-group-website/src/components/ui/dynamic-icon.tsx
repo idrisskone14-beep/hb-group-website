@@ -23,6 +23,7 @@ import {
   Building2,
   Newspaper,
   GraduationCap,
+  HardHat,
 } from "lucide-react";
 
 type IconProps = {
@@ -80,6 +81,8 @@ export function DynamicIcon({ name, className, strokeWidth }: { name: string } &
       return <Newspaper {...props} />;
     case "GraduationCap":
       return <GraduationCap {...props} />;
+    case "HardHat":
+      return <HardHat {...props} />;
     case "Sparkles":
     default:
       return <Sparkles {...props} />;
